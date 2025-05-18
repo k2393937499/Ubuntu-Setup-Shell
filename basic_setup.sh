@@ -2,7 +2,7 @@
 
 # set timezone
 default_timezone="Asia/Shanghai"
-echo -e "\033[32mInfo: timezone will be set, you can check avaiable timezone on https://manpages.ubuntu.com/manpages/xenial/man3/DateTime::TimeZone::Catalog.3pm.html"
+echo -e "\033[32mInfo: timezone will be set, you can check avaiable timezone on https://manpages.ubuntu.com/manpages/xenial/man3/DateTime::TimeZone::Catalog.3pm.html\033[0m"
 while true; do
     read -p $'\033[32mInfo: set timezone(default '"$default_timezone"$', "skip" to skip): \033[0m' target_timezone
     target_timezone=${target_timezone:-$default_timezone}
